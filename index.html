@@ -1,0 +1,41 @@
+<!--
+The magic wheel is supposed to be played by multiple persons and the rules of the game have to be coded but unfortunately i could not do it in time. 
+So basically there are 30 questions that the user can choose from the wheel by spinning it. 
+When the wheel finish spinning, the question and also the answer square show up. Click on the alphabet to pick your guessing letter. If the guessing letter is right, the square will show the letter. If you all good, spin again for the next question. 
+
+Firework.js works but i need to modify the css for it but for now i do not include in the app. 
+Wheel.js handles everything concerning the wheel >> i found it on a github of a developer but i guess i can't write it all but it was very interesting to understand it line by line and i did write comments next to all of the command line to show my understanding of his code. 
+index.js handles the interaction of the app >> i wrote this part 
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Magic Wheel</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+</head>
+<body>
+	<h1 id="h1"> Magic Wheel</h1>
+	<div id="firework"> </div>
+
+	<div class="col-md-12" id="alphabet"> </div>
+	<div class="col-md-12" id="answer"> </div>
+	
+	<div class="row">
+		<div class="col-md-6 " id="chart"> </div>
+		<div class="col-md-6 " id="question"> <h1></h1></div>
+	</div>
+
+	
+<!-- 	<script type="text/javascript" src="js/firework.js"></script>  -->
+	<script type="text/javascript" src="js/wheel.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>	
+
+
